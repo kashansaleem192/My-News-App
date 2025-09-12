@@ -7,3 +7,159 @@ body{
 img{
     width: 50px;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.form-control {
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+.btn-outline-success {
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
+.btn-outline-success:hover {
+  background: #198754;
+  color: #fff;
+}
+
+
+#showData {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+
+.card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.card .btn-primary {
+  background: #198754;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.card .btn-primary:hover {
+  background: #145c35;
+}
+
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+}
+
+
+
+.navbar {
+  font-size: 15px;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.nav-link {
+  color: #444 !important;
+  margin: 0 8px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #198754 !important;
+}
+
+.nav-link.active {
+  color: #198754 !important;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #198754;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.navbar .form-control {
+  border-radius: 25px;
+  padding: 8px 14px;
+}
+
+.navbar .btn-success {
+  border-radius: 25px;
+  padding: 8px 18px;
+}
